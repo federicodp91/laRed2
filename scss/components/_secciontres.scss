@@ -1,0 +1,69 @@
+/*Seccion tres*/
+.seccion-tres{
+    margin-top: 2em;
+    margin-bottom: 10em;
+    padding-top: 60px;
+    .card{
+        box-shadow: 7px 13px 57px #000;
+        @media screen and (max-width: 575px) {
+            margin-top: 2em;
+        }
+        .card-body{
+            font-family:'Spinnaker', sans-serif;
+            .card-text{
+                font-size: 1.2em;
+            }
+            .titulo-dos{
+                color:black;
+                opacity: 0.6;
+                font-size: 3em;
+                font-family:'Spinnaker', sans-serif; 
+            }
+            .lista-requisitos{
+                list-style: none;
+                font-family:'Spinnaker', sans-serif; 
+                font-size: 1.2em;
+                li{
+                    &::before {
+                        content:'*';
+                        color: $color-violeta;
+                        font-size: 1.3em;
+                    }
+                }
+            }
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            button{
+                position: relative;
+                margin: auto;
+                padding: 1em 1.8em;
+                text-align: center;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+                text-decoration: none;
+                color: $color-violeta;
+                background: transparent;
+                cursor: pointer;
+                transition: ease-out 0.5s;
+                border-radius: 3.75em;
+                border: 2px solid $color-violeta;
+                border-radius: 10px;
+                box-shadow: inset 0 0 0 0 $color-violeta;
+                &:hover{
+                    color: white;
+                    box-shadow: inset 0 -100px 0 0 $color-violeta;
+                }
+                &:active{
+                    transform: scale(0.9);
+                }
+                @media screen and (max-width: 480px) {
+                    width: 100%;
+                }
+            }          
+        }
+
+    }
+}
+/*Fin Seccion tres*/
